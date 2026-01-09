@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const complaintText = document.getElementById('complaintText');
     const thankYouMessage = document.getElementById('thankYouMessage');
 
-    const REDIRECT_URL = 'https://www.google.com/maps/place//data=!4m3!3m2!1s0x40b1ff4d3de91917:0xbf7b8252eccbe34d!12e1?source=g.page.m.ia._&laa=nmx-review-solicitation-ia2';
-    const WEBHOOK_URL = 'https://scaleflow12.app.n8n.cloud/webhook/2f988348-be6e-41d2-94a1-d3758b969816';
+    const REDIRECT_URL = import.meta.env.VITE_REDIRECT_URL;
+    const WEBHOOK_URL = import.meta.env.VITE_WEBHOOK_URL;
 
     let currentRating = 0;
 
